@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño de menu */
+.menu {
+    background-color: white;
+    padding: 20px;
+}
+
+.menu li,
+.menu a {
+    font-family: sans-serif;
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    color: rgba(128, 127, 127, 0.9);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.menu li:hover,
+.menu a:hover {
+    color: black;
+    transition: 0.3s;
+}
+
+.menu ul {
+    text-align: right;
+    padding: 20px;
+}
+
+/* Contenido */
+.nombre {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 60px;
+    box-shadow:  24px 24px 48px #565353,
+                -24px -24px 48px #ffffff;
+    margin: 90px auto; /* Centrar verticalmente y horizontalmente */
+    max-width: 50%; /* Limitar el ancho para evitar que el contenido se estire demasiado */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem; /* Reducir el tamaño de fuente de los encabezados */
+}
+
+p {
+    font-size: 1.4rem; /* Reducir el tamaño de fuente de los párrafos */
+    line-height: 1.5; /* Ajustar el espaciado entre líneas */
+    margin-bottom: 10px; /* Agregar un margen inferior para separar los párrafos */
+}
+
+
+/* Reglas de medios para hacer responsive */
+@media screen and (max-width: 768px) {
+    .menu ul {
+        text-align: center; /* Centrar los elementos del menú en pantallas pequeñas */
+    }
+    .menu li,
+    .menu a {
+        font-size: 1.5rem; /* Reducir el tamaño del texto del menú en pantallas pequeñas */
+    }
+
+    .nombre {
+        margin: 50px auto; /* Ajustar el margen en pantallas más pequeñas */
+        padding: 10px; /* Reducir el relleno en pantallas más pequeñas */
+        max-width: 90%; /* Ajustar el ancho máximo en pantallas más pequeñas */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reducir el tamaño de fuente de los encabezados en pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 1.2rem; /* Reducir el tamaño de fuente de los párrafos en pantallas más pequeñas */
+        line-height: 1.3; /* Ajustar el espaciado entre líneas en pantallas más pequeñas */
+        margin-bottom: 5px; /* Reducir el margen inferior de los párrafos en pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu ul {
+        padding: 10px; /* Reducir el espacio entre los elementos del menú en pantallas muy pequeñas */
+    }
+
+    .nombre {
+        max-width: 95%; /* Ajustar el ancho máximo en pantallas muy pequeñas */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Reducir más el tamaño de fuente de los encabezados en pantallas muy pequeñas */
+    }
+
+    p {
+        font-size: 1rem; /* Reducir más el tamaño de fuente de los párrafos en pantallas muy pequeñas */
+    }
+}
